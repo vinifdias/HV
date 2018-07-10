@@ -1,0 +1,8 @@
+D:\Projetos\vsfa\HV_tech\HV_tech.Model\bin\Debug\netcoreapp2.0\HV_tech.Model.deps.json
+D:\Projetos\vsfa\HV_tech\HV_tech.Model\bin\Debug\netcoreapp2.0\HV_tech.Model.dll
+D:\Projetos\vsfa\HV_tech\HV_tech.Model\bin\Debug\netcoreapp2.0\HV_tech.Model.pdb
+D:\Projetos\vsfa\HV_tech\HV_tech.Model\obj\Debug\netcoreapp2.0\HV_tech.Model.csproj.CoreCompileInputs.cache
+D:\Projetos\vsfa\HV_tech\HV_tech.Model\obj\Debug\netcoreapp2.0\HV_tech.Model.AssemblyInfoInputs.cache
+D:\Projetos\vsfa\HV_tech\HV_tech.Model\obj\Debug\netcoreapp2.0\HV_tech.Model.AssemblyInfo.cs
+D:\Projetos\vsfa\HV_tech\HV_tech.Model\obj\Debug\netcoreapp2.0\HV_tech.Model.dll
+D:\Projetos\vsfa\HV_tech\HV_tech.Model\obj\Debug\netcoreapp2.0\HV_tech.Model.pdb
