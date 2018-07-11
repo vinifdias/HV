@@ -12,22 +12,42 @@ namespace HV_tech_mvc.Controllers
     {
         public ActionResult Index()
         {
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create("http://localhost:51600/api/values");
+            try
+            {
+                string orderTest = "morning,1,2,3";
+
+                var returnedOrder = CallOrderAPI(orderTest);
+
+                if (!string.IsNullOrEmpty(returnedOrder))
+                {
+
+                }
+
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+            return View();
+        }
+
+        private string CallOrderAPI(string input)
+        {
+            string order = string.Empty;
+
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create("http://localhost:51600/api/values/" + input);
 
             WebResponse response = request.GetResponse();
             using (Stream responseStream = response.GetResponseStream())
             {
                 StreamReader reader = new StreamReader(responseStream, System.Text.Encoding.UTF8);
-                var text = reader.ReadToEnd();
-
-                if (text != null)
-                {
-
-                }
+                order = reader.ReadToEnd();
             }
 
-            return View();
+            return order;
         }
+
 
         public ActionResult About()
         {

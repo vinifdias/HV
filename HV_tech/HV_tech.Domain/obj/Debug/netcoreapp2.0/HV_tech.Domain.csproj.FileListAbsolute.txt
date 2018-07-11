@@ -10,3 +10,15 @@ D:\Projetos\vsfa\HV_tech\HV_tech.Domain\obj\Debug\netcoreapp2.0\HV_tech.Domain.A
 D:\Projetos\vsfa\HV_tech\HV_tech.Domain\obj\Debug\netcoreapp2.0\HV_tech.Domain.csproj.CopyComplete
 D:\Projetos\vsfa\HV_tech\HV_tech.Domain\obj\Debug\netcoreapp2.0\HV_tech.Domain.dll
 D:\Projetos\vsfa\HV_tech\HV_tech.Domain\obj\Debug\netcoreapp2.0\HV_tech.Domain.pdb
+C:\Projetos\HV\HV_tech\HV_tech.Domain\bin\Debug\netcoreapp2.0\HV_tech.Domain.deps.json
+C:\Projetos\HV\HV_tech\HV_tech.Domain\bin\Debug\netcoreapp2.0\HV_tech.Domain.dll
+C:\Projetos\HV\HV_tech\HV_tech.Domain\bin\Debug\netcoreapp2.0\HV_tech.Domain.pdb
+C:\Projetos\HV\HV_tech\HV_tech.Domain\bin\Debug\netcoreapp2.0\HV_tech.Model.dll
+C:\Projetos\HV\HV_tech\HV_tech.Domain\bin\Debug\netcoreapp2.0\HV_tech.Model.pdb
+C:\Projetos\HV\HV_tech\HV_tech.Domain\obj\Debug\netcoreapp2.0\HV_tech.Domain.csprojAssemblyReference.cache
+C:\Projetos\HV\HV_tech\HV_tech.Domain\obj\Debug\netcoreapp2.0\HV_tech.Domain.csproj.CoreCompileInputs.cache
+C:\Projetos\HV\HV_tech\HV_tech.Domain\obj\Debug\netcoreapp2.0\HV_tech.Domain.AssemblyInfoInputs.cache
+C:\Projetos\HV\HV_tech\HV_tech.Domain\obj\Debug\netcoreapp2.0\HV_tech.Domain.AssemblyInfo.cs
+C:\Projetos\HV\HV_tech\HV_tech.Domain\obj\Debug\netcoreapp2.0\HV_tech.Domain.csproj.CopyComplete
+C:\Projetos\HV\HV_tech\HV_tech.Domain\obj\Debug\netcoreapp2.0\HV_tech.Domain.dll
+C:\Projetos\HV\HV_tech\HV_tech.Domain\obj\Debug\netcoreapp2.0\HV_tech.Domain.pdb

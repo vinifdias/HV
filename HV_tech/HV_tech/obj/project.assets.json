@@ -4746,6 +4746,29 @@
         "runtime": {
           "lib/netstandard1.3/Microsoft.WindowsAzure.Storage.dll": {}
         }
+      },
+      "HV_tech.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "dependencies": {
+          "HV_tech.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HV_tech.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HV_tech.Domain.dll": {}
+        }
+      },
+      "HV_tech.Model/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.0",
+        "compile": {
+          "bin/placeholder/HV_tech.Model.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HV_tech.Model.dll": {}
+        }
       }
     }
   },
@@ -12654,32 +12677,43 @@
         "windowsazure.storage.8.1.4.nupkg.sha512",
         "windowsazure.storage.nuspec"
       ]
+    },
+    "HV_tech.Domain/1.0.0": {
+      "type": "project",
+      "path": "../HV_tech.Domain/HV_tech.Domain.csproj",
+      "msbuildProject": "../HV_tech.Domain/HV_tech.Domain.csproj"
+    },
+    "HV_tech.Model/1.0.0": {
+      "type": "project",
+      "path": "../HV_tech.Model/HV_tech.Model.csproj",
+      "msbuildProject": "../HV_tech.Model/HV_tech.Model.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.0": [
+      "HV_tech.Domain >= 1.0.0",
       "Microsoft.AspNetCore.All >= 2.0.9",
       "Microsoft.NETCore.App >= 2.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vgamer\\.nuget\\packages\\": {},
+    "C:\\Users\\vsfa\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Projetos\\vsfa\\HV_tech\\HV_tech\\HV_tech.csproj",
+      "projectUniqueName": "C:\\Projetos\\HV\\HV_tech\\HV_tech\\HV_tech.csproj",
       "projectName": "HV_tech",
-      "projectPath": "D:\\Projetos\\vsfa\\HV_tech\\HV_tech\\HV_tech.csproj",
-      "packagesPath": "C:\\Users\\Vgamer\\.nuget\\packages\\",
-      "outputPath": "D:\\Projetos\\vsfa\\HV_tech\\HV_tech\\obj\\",
+      "projectPath": "C:\\Projetos\\HV\\HV_tech\\HV_tech\\HV_tech.csproj",
+      "packagesPath": "C:\\Users\\vsfa\\.nuget\\packages\\",
+      "outputPath": "C:\\Projetos\\HV\\HV_tech\\HV_tech\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Vgamer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\vsfa\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -12691,7 +12725,11 @@
       },
       "frameworks": {
         "netcoreapp2.0": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Projetos\\HV\\HV_tech\\HV_tech.Domain\\HV_tech.Domain.csproj": {
+              "projectPath": "C:\\Projetos\\HV\\HV_tech\\HV_tech.Domain\\HV_tech.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

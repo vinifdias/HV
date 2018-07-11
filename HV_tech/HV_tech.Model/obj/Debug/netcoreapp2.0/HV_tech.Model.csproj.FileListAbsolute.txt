@@ -6,3 +6,12 @@ D:\Projetos\vsfa\HV_tech\HV_tech.Model\obj\Debug\netcoreapp2.0\HV_tech.Model.Ass
 D:\Projetos\vsfa\HV_tech\HV_tech.Model\obj\Debug\netcoreapp2.0\HV_tech.Model.AssemblyInfo.cs
 D:\Projetos\vsfa\HV_tech\HV_tech.Model\obj\Debug\netcoreapp2.0\HV_tech.Model.dll
 D:\Projetos\vsfa\HV_tech\HV_tech.Model\obj\Debug\netcoreapp2.0\HV_tech.Model.pdb
+C:\Projetos\HV\HV_tech\HV_tech.Model\bin\Debug\netcoreapp2.0\HV_tech.Model.deps.json
+C:\Projetos\HV\HV_tech\HV_tech.Model\bin\Debug\netcoreapp2.0\HV_tech.Model.dll
+C:\Projetos\HV\HV_tech\HV_tech.Model\bin\Debug\netcoreapp2.0\HV_tech.Model.pdb
+C:\Projetos\HV\HV_tech\HV_tech.Model\obj\Debug\netcoreapp2.0\HV_tech.Model.csprojAssemblyReference.cache
+C:\Projetos\HV\HV_tech\HV_tech.Model\obj\Debug\netcoreapp2.0\HV_tech.Model.csproj.CoreCompileInputs.cache
+C:\Projetos\HV\HV_tech\HV_tech.Model\obj\Debug\netcoreapp2.0\HV_tech.Model.AssemblyInfoInputs.cache
+C:\Projetos\HV\HV_tech\HV_tech.Model\obj\Debug\netcoreapp2.0\HV_tech.Model.AssemblyInfo.cs
+C:\Projetos\HV\HV_tech\HV_tech.Model\obj\Debug\netcoreapp2.0\HV_tech.Model.dll
+C:\Projetos\HV\HV_tech\HV_tech.Model\obj\Debug\netcoreapp2.0\HV_tech.Model.pdb

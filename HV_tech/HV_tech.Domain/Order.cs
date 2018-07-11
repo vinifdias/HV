@@ -9,24 +9,24 @@ namespace HV_tech.Domain
     public class Order
     {
         private string initialOrder;
+        private string message;
 
         public Order(string value)
         {
             initialOrder = value;
         }
 
-
-        public void ValidateOrder(string message)
+        public void CreateOrder()
         {
             try
             {
                 var order = initialOrder.Split(',');
 
-                if (isValidInput(order, message))
+                if (isValidInput(order))
                 {
                     var dishType = (DishType)Enum.Parse(typeof(DishType), order[0], true);
-                    var lstOrder = BuildOrder(order, message);
-                    var orderText = GetDishTextByList(lstOrder, dishType);
+                    var lstOrder = BuildOrder(order);
+                    message = GetDishTextByList(lstOrder, dishType);
                 }
             }
             catch (Exception ex)
@@ -35,7 +35,7 @@ namespace HV_tech.Domain
             }
         }
 
-        private string GetDishTextByList(List<int> lstOrder, DishType type)
+        public string GetDishTextByList(List<int> lstOrder, DishType type)
         {
             var dishesList = Dish.GetDisherByType(type);
             var namesList = new List<string>();
@@ -46,7 +46,7 @@ namespace HV_tech.Domain
             return String.Join(",", namesList);
         }
 
-        private List<int> BuildOrder(string[] order, string message)
+        private List<int> BuildOrder(string[] order)
         {
             var lstItens = new List<int>();
 
@@ -67,15 +67,20 @@ namespace HV_tech.Domain
             return lstItens;
         }
 
-        private bool isValidInput(string[] order, string msg)
+        private bool isValidInput(string[] order)
         {
             if (order.Length < 2)
             {
-                msg = "Invalid input. Please, redo your order.";
+                message = "Invalid input. Please, redo your order.";
                 return false;
             }
 
             return Enum.IsDefined(typeof(DishType), order[0]);
+        }
+
+        public string GetOrderText()
+        {
+            return message;
         }
     }
 }

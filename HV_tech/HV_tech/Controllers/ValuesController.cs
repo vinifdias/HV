@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using HV_tech.Domain;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HV_tech.Controllers
@@ -20,23 +21,9 @@ namespace HV_tech.Controllers
         [HttpGet("{value}")]
         public string Get(string value)
         {
-            string message = "Test";
-
-            //try
-            //{
-            //    var order = value.Split(',');
-
-            //    if (isValidInput(order, message))
-            //    {
-            //        BuildOrder(order, message);
-            //    }
-            //}
-            //catch (Exception ex)
-            //{
-            //    message = ex.Message;
-            //}
-            
-            return message;
+            Order domainOrder = new Order(value);
+            domainOrder.CreateOrder();
+            return domainOrder.GetOrderText();
         }
 
         // POST api/values
