@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HV_tech", "HV_tech\HV_tech.csproj", "{D6656B9A-AF92-4F94-B7BE-B5D0D954172E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HV_tech", "HV_tech\HV_tech.csproj", "{D6656B9A-AF92-4F94-B7BE-B5D0D954172E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HV_tech.Model", "HV_tech.Model\HV_tech.Model.csproj", "{69940E4D-0721-4063-83F9-6AB3A7F28290}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HV_tech.Model", "HV_tech.Model\HV_tech.Model.csproj", "{69940E4D-0721-4063-83F9-6AB3A7F28290}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HV_tech.Domain", "HV_tech.Domain\HV_tech.Domain.csproj", "{9ABBF3A1-D6D4-40AB-8214-74F0CA4374F5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HV_tech.Domain", "HV_tech.Domain\HV_tech.Domain.csproj", "{9ABBF3A1-D6D4-40AB-8214-74F0CA4374F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HV_tech.UnitTests", "HV_tech.UnitTests\HV_tech.UnitTests.csproj", "{B834FA16-CA5F-4EAC-82DB-8CBB96DE91C2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{9ABBF3A1-D6D4-40AB-8214-74F0CA4374F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9ABBF3A1-D6D4-40AB-8214-74F0CA4374F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9ABBF3A1-D6D4-40AB-8214-74F0CA4374F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B834FA16-CA5F-4EAC-82DB-8CBB96DE91C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B834FA16-CA5F-4EAC-82DB-8CBB96DE91C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B834FA16-CA5F-4EAC-82DB-8CBB96DE91C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B834FA16-CA5F-4EAC-82DB-8CBB96DE91C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
