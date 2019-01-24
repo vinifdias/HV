@@ -1,0 +1,77 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@section Scripts{
+
+    <script src="~/Scripts/modernizr-2.8.3.js"></script>
+    <script src="~/Scripts/jquery-3.3.1.intellisense.js"></script>
+    <script src="~/Scripts/jquery-3.3.1.js"></script>
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+}
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('.btn-add-order').click(function () {
+            var order = $('.txtOrder').val();
+
+            $.ajax({
+                type: 'POST',
+                url: '/Home/Order',
+                data: { "order": order },
+                success: function (data) {
+                    var tBody = $(".tbl-Orders > TBODY")[0];
+
+                    var row = tBody.insertRow(-1);
+
+                    var cell = $(row.insertCell(-1));
+
+                    cell.html(data);
+
+                    $('.txtOrder').val('');
+                },
+                error: function () {
+                    alert("Connection Failed. Please Try Again");
+                }
+            });
+        });
+    });
+</script>
+
+<div class="row">
+    <div class="col-lg-12">
+        <h4>Dishes for Each time of day</h4>
+        <table border="1" width="600" class="text-center">
+            <thead class="text-center">
+                <tr><th class="text-center">Dish Type</th><th class="text-center">Morning</th><th class="text-center">Night</th></tr>
+            </thead>
+            <tbody>
+                <tr><td class="text-center">1 (entrée)</td><td>eggs</td><td>steak</td></tr>
+                <tr><td>2 (side)</td><td>Toast</td><td>potato</td></tr>
+                <tr><td>3 (drink)</td><td>coffee</td><td>wine</td></tr>
+                <tr><td>4 (dessert)</td><td>Not Applicable</td><td>cake</td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="row">
+    <h1></h1>
+    <div class="col-lg-12">
+        <label>Input your order here:</label>
+        <input type="text" name="txtOrder" class="txtOrder" />
+        <input type="button" value="Input" name="btnOrder" class="btn-add-order" />
+    </div>
+</div>
+<p></p>
+<div class="row">
+    <div class="col-lg-12">
+        <table id="tblOrders" class="tbl-Orders" width="400" border="1">
+            <thead>
+                <tr><th colspan="2" class="text-center">Orders</th></tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
